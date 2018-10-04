@@ -1,3 +1,12 @@
+/*
+*
+* Author: Jagmeet Singh Khanuja 
+* Mail: jagmeetsingh.work@gmail.com
+* Data Created: Sept 12, 2018
+* Javascript to convert JSON Data to CSV (Excel)
+*
+*/
+
 function get_table(query_code){
 		if(hasGrid("t1") ){
 			TF_RemoveFilterGrid("t1");	
