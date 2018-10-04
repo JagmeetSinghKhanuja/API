@@ -3,7 +3,9 @@
 * Author: Jagmeet Singh Khanuja 
 * Mail: jagmeetsingh.work@gmail.com
 * Data Created: Sept 12, 2018
-* Javascript to convert JSON Data to CSV (Excel)
+* Javascript to create a table out of JSON
+* Customized
+* DO NOT USE WITHOUT REFERENCE
 *
 */
 
