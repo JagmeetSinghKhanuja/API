@@ -11,7 +11,7 @@
 
 var jq = document.createElement("script");
 
-jq.addEventListener("load", get_table); // pass my hoisted function
+jq.addEventListener("load", get_table);
 jq.src = "//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js";
 document.querySelector("head").appendChild(jq);
 
