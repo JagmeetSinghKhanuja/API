@@ -23,18 +23,12 @@ function get_table(query_code){
 		$("#t1").empty();
 		var env = $("#env").val();
         var http = new XMLHttpRequest();	
-		
-		http.open("GET", "/get_table" + env + query_code, true);
-		
+	http.open("GET", "/get_table" + env + query_code, true);
         http.setRequestHeader("Content-type", "application/json");
-        //http.setRequestHeader("Content-length", params.length);
-        //http.setRequestHeader("Connection", "close");
         http.onreadystatechange = function() {
         console.log('onreadystatechange');
         if (http.readyState == 4 && http.status == 200) {
-            console.log(JSON.stringify(http.responseText));
-			console.log('pasting data of cycle');
-            var data = JSON.parse(http.responseText);
+        	var data = JSON.parse(http.responseText);
 			$("#_json").val(http.responseText);
 			$("#_download").show();
 			//For table Headers
@@ -124,7 +118,7 @@ function get_table(query_code){
 			}
 		}
 			else {
-			console.log('readyState=' + http.readyState + ', status: ' + http.status);
+			console.error('readyState=' + http.readyState + ', status: ' + http.status);
 			}
 			}
 			http.send();
